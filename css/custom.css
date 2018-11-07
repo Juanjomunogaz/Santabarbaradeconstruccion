@@ -1,3 +1,15 @@
+.contact-map iframe {
+      margin-left: 50%;
+}
+
+.contact-map iframe {
+      width: 50%;
+}
+
+.contact-grids {
+      width: 50%;
+}
+
 @media only screen and (max-width: 992px){
   .col-md-6 {
       width: 100%;
@@ -11,19 +23,5 @@
   }
   .contact-grids {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 2000px){
-  .contact-map iframe {
-      margin-left: 50%;
-  }
-
-  .contact-map iframe {
-      width: 50%;
-  }
-
-  .contact-grids {
-      width: 50%;
   }
 }
