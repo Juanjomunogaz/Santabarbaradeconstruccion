@@ -10,18 +10,18 @@ iframe {
     width: 50%;
 }
 
-@media (min-width: 992px){
+@media (man-width: 992px){
   .col-md-6 {
       width: 100%;
   }
 }
 
-@media (min-width: 1200px){
+@media (man-width: 1200px){
   iframe {
       margin-left: 0%;
       width: 100%;
   }
   .contact-grids {
     width: 100%;
-}
+  }
 }
