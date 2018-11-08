@@ -140,7 +140,8 @@
 				var link = "mailto:juanjo.santabarbara@hotmail.com" +
 					"?cc=myCCaddress@example.com" +
 					"&subject=" + escape("SOLICITUD MEDIANTE WEB") +
-					"&body=" + escape(document.getElementById('contentMessage').value);
+					"&body=" + escape("El cliente "+document.getElementById('contentMessage').value ", con mail:"+
+					 document.getElementById('contentMessage').value +" , desea conocer: "+ document.getElementById('contentMessage').value);
 
 				window.location.href = link;
 			}
@@ -149,9 +150,9 @@
 				<h3><span> </span>Contacto</h3>
 				<p><i class="fa fa-map-marker"> </i> Jl. Ringroad Utara no 17AB, Yogyakarta, 55282</p>
 				<form>
-					<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-					<input type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
-					<textarea id="contentMessage"onfocus="if(this.value == 'Message *') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message *</textarea>
+					<input id="nameMessage" type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					<input id="mailMessage" type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
+					<textarea id="contentMessage" onfocus="if(this.value == 'Message *') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message *</textarea>
 					<p class="conditions"> <label><span>*</span>Debe rellenar los campos obligatorios.</label></p>
 					<span class="submit-btn"><input type="submit" value="Enviar" onclick="sendMail()"></span>
 				</form>
