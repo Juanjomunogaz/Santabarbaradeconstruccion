@@ -4,21 +4,7 @@
 <head>
 	<title>Santa Barbara de Construccion SCA</title>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
-	<!---- start-smoth-scrolling---->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
 	<!---- start-smoth-scrolling---->
 	<!-- Custom Theme files -->
 	<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
@@ -70,7 +56,7 @@
 		<div class="container">
 			<!---- start-logo---->
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" title="Mabur" /></a>
+				<a href="index.html"><img src="images/logo.png" title="Santa barbara de construccion SCA" /></a>
 			</div>
 			<!---- //End-logo---->
 			<!----start-top-nav---->
@@ -84,8 +70,9 @@
 			</nav>
 			<div class="clearfix"> </div>
 			<div class="slide-text text-center">
-				<h1>REFORMAS, DERRIBOS, TRANSPORTES, MATERIALES</h1>
-				<a class="slide-btn" href="#">Learn More</a>
+				<h1>TRANSPORTES Y EXCAVACIONES</h1>
+				<h2>Materiales de construcción, pavimentos y sanitarios</h2>
+				<a class="slide-btn" href="#fea">Saber más</a>
 			</div>
 			<!----//End-top-nav---->
 		</div>
@@ -96,29 +83,29 @@
 		<div class="container">
 			<div class="head text-center">
 				<h3><span> </span> Nuestros servicios</h3>
-				<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+				<p></p>
 			</div>
 			<!---- start-features-grids---->
 			<div class="features-grids text-center">
 				<div class="col-md-3 features-grid">
-					<span class="fea-icon1"><i class="fa fa-building-o"> </i> </span>
-					<h3><a href="#">Reformas</a></h3>
-					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean.</p>
-				</div>
-				<div class="col-md-3 features-grid">
-					<span class="fea-icon1"><i class="fa fa-gavel"> </i> </span>
-					<h3><a href="#">Derribos</a></h3>
-					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean.</p>
+					<span class="fea-icon1"><i class="fa fa-road"> </i> </span>
+					<h3><a href="#">Hormigones</a></h3>
+					<p>Servimos hormigones a medida</p>
 				</div>
 				<div class="col-md-3 features-grid">
 					<span class="fea-icon1"><i class="fa fa-truck"> </i> </span>
 					<h3><a href="#">Transportes</a></h3>
-					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean.</p>
+					<p>Realizamos portes de todo tipo, tanto de maquinaria como de género a granel</p>
 				</div>
 				<div class="col-md-3 features-grid">
-					<span class="fea-icon1"><i class="fa fa-shopping-cart"> </i> </span>
+					<span class="fea-icon1"><i class="fa fa-archive"> </i> </span>
 					<h3><a href="#">Materiales</a></h3>
-					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean.</p>
+					<p>Cementos y sus derivados, aridos, pavimentos, revestimientos aislantes y sanitarios (entre otros)</p>
+				</div>
+				<div class="col-md-3 features-grid">
+					<span class="fea-icon1"><i class="fa fa-gavel"> </i> </span>
+					<h3><a href="#">Excavaciones</a></h3>
+					<p>Realizamos movimientos de tierra, excavaciones y derribos</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -148,11 +135,12 @@
 		</script>
 			<div class="col-md-6 contact-left">
 				<h3><span> </span>Contacto</h3>
-				<p><i class="fa fa-map-marker"> </i> Jl. Ringroad Utara no 17AB, Yogyakarta, 55282</p>
-				<form>
-					<input id="nameMessage" type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<p><i class="fa fa-map-marker"> </i> Carretera Yator, S/N, 18480 Ugíjar, Granada, España</p>
+				<p><i class="fa fa-phone"> </i> 958 76 72 57</p>
+				<p id="pmail"><i class="fa fa-envelope"> </i> santabarbaradeconstruccion@hotmail.com</p>
+				<form method="post" action="mailto:santabarbaradeconstruccion@hotmail.com">
 					<input id="mailMessage" type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
-					<textarea id="contentMessage" onfocus="if(this.value == 'Message *') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message *</textarea>
+					<textarea id="contentMessage" onfocus="if(this.value == 'Mensaje *') this.value='';" onblur="if(this.value == '') this.value='Consulta *;">Mensaje *</textarea>
 					<p class="conditions"> <label><span>*</span>Debe rellenar los campos obligatorios.</label></p>
 					<span class="submit-btn"><input type="submit" value="Enviar" onclick="sendMail()"></span>
 				</form>
@@ -163,8 +151,7 @@
 		<div class="footer">
 			<div class="container">
 				<div class="footer-left">
-					<a href="#"><img src="images/footer-logo.png" title="mabur" /></a>
-					<p></p>
+					<a href="#"><img src="images/footer-logo.png" title="Santa barbara de construccion SCA" /></a>
 				</div>
 				<script type="text/javascript">
 					$(document).ready(function() {
