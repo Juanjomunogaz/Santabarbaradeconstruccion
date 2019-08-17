@@ -21,6 +21,7 @@
     font-size: 5em;
     text-shadow: 5px 5px 10px black;
     font-weight: 900;
+    font-family: 'Droid Serif', serif;
 }
 
 .slide-text h2 {
@@ -28,6 +29,7 @@
     font-size: 2em;
     text-shadow: 5px 5px 10px black;
     font-weight: 600;
+    font-family: 'Droid Serif', serif;
 }
 
 .logo {
