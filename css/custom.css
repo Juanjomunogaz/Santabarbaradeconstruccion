@@ -70,6 +70,9 @@ div#fea {
   .slide-text h2 {
       font-size: 1.5em;
   }
+  #pmail{
+    font-size: 0.75em;
+  }
 }
 @media only screen and (max-width: 420px) {
   .slide-text h1 {
@@ -77,6 +80,9 @@ div#fea {
   }
   .slide-text h2 {
       font-size: 1em;
+  }
+  #pmail{
+    font-size: 0.5em;
   }
 }
 
